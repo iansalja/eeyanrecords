@@ -1,0 +1,222 @@
+body {
+  background-color: #000;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+h1 {
+  color: #5d17ea;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #5d17ea;
+}
+h2 {
+  color: #5d17ea;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #5d17ea;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+nav {
+  background-color: #5d17ea;
+  padding: 10px;
+  margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+nav .navbar-brand {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+nav .navbar-brand:hover,
+nav .navbar-brand:focus {
+  animation: scaleAnimation 0.5s ease-in-out forwards;
+}
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+nav .navbar-toggler-icon {
+  filter: invert(1);
+}
+nav .nav-link {
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+nav .nav-link:hover {
+  color: #ffdbdb;
+}
+footer {
+  background-color: #5d17ea;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+#about {
+  padding: 50px 0;
+  background-color: white;
+  box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+#music {
+  padding: 50px 0;
+  background-color: white;
+  box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+#gallery {
+  padding: 50px 0;
+  background-color: white;
+  box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+#contact {
+  padding: 50px 0;
+  background-color: white;
+  box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #5d17ea;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5d17ea;
+  display: block;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+form a,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1b1b1b;
+  color: #fff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+form textarea {
+  resize: none;
+}
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0047ab;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+form button:hover {
+  background-color: #0047ab;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.section-title h2 {
+  font-size: 3.5rem;
+  color: #5d17ea;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+.section-title p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    padding: 30px 0;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .section-title h2 {
+    font-size: 2.8rem;
+  }
+  .section-title p {
+    font-size: 1.2rem;
+  }
+  nav .navbar-brand {
+    font-size: 1.8rem;
+  }
+  nav .nav-link {
+    font-size: 1rem;
+    margin: 0 5px;
+  }
+  .center {
+    text-align: center;
+  }
